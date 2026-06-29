@@ -1,0 +1,46 @@
+body {
+    margin:0;
+}
+
+.Resume-container {
+    display: flex;
+    gap: 30px;
+}
+
+aside {
+    width: 320px;
+    background-color: rgb(60, 21, 35);
+    color: azure;
+    text-decoration: none;
+    padding: 20px;
+    flex-shrink:0;
+    flex-wrap: wrap;
+}
+
+main {
+    flex-shrink: 1;
+}
+
+h1 {
+    font-size: xxx-large;
+}
+
+p {
+    font-size: large;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+h3 {
+    font-size:  larger;
+}
+
+ul {
+    font-size: large;
+}
+
+hr {
+    margin-bottom: 30px;
+}

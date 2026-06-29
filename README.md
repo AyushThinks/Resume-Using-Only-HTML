@@ -1,55 +1,150 @@
 # Ayush Joshi — Resume (HTML)
 
-A personal resume built using **semantic HTML only** — no CSS, no frameworks.  
-Structured for future styling with a two-column layout (`<aside>` + `<main>`).
+A personal resume built using **semantic HTML5 only**.
+The project follows a clean semantic structure and is designed to be styled later using CSS with a two-column layout consisting of **`<aside>`** and **`<main>`**.
 
 ---
 
-## Structure
+## Project Structure
 
-```
-<article>              → entire resume
-  <aside>              → left column (contact, skills, certifications, coursework)
-  <main>               → right column (header, education, projects)
-    <header>           → name + tagline + links
-    <section>          → education
-    <section>          → projects
-      <article>        → each individual project
+```text
+.
+├── resume.html
+├── style.css
+├── README.md
+└── RESUMEHTML.png
 ```
 
 ---
 
-## Semantic Tags Used
+## HTML Structure
 
-| Tag | Purpose |
-|---|---|
-| `<article>` | Entire resume as a self-contained document |
-| `<aside>` | Left sidebar — supporting info |
-| `<main>` | Primary content — education & projects |
-| `<header>` | Page top + inside each project |
-| `<section>` | Thematic groups (skills, education, projects) |
-| `<address>` | Contact info (location, GitHub, LinkedIn) |
-| `<time>` | All dates with `datetime` attribute |
-| `<em>` | Tech stack labels inside projects |
-| `<strong>` | Degree name emphasis |
+```text
+html
+│
+├── head
+│   ├── meta (charset)
+│   ├── meta (viewport)
+│   ├── meta (description)
+│   ├── meta (author)
+│   ├── title
+│   └── link (style.css)
+│
+└── body
+    │
+    └── article
+        │
+        ├── section (.Resume-container)
+        │   │
+        │   ├── aside
+        │   │   │
+        │   │   ├── section (Contact)
+        │   │   │   ├── h2
+        │   │   │   ├── hr
+        │   │   │   ├── section (Location)
+        │   │   │   ├── section (GitHub)
+        │   │   │   └── section (LinkedIn)
+        │   │   │
+        │   │   ├── section (Technical Skills)
+        │   │   │   ├── section (Languages & Frameworks)
+        │   │   │   └── section (Tools & Databases)
+        │   │   │
+        │   │   ├── section (Certifications)
+        │   │   │   └── article
+        │   │   │       ├── header
+        │   │   │       ├── p
+        │   │   │       └── time
+        │   │   │
+        │   │   └── section (Coursework)
+        │   │       └── ul
+        │   │
+        │   └── main
+        │       │
+        │       ├── header
+        │       │   ├── h1
+        │       │   ├── Professional Title
+        │       │   └── Contact Links
+        │       │
+        │       ├── section (Education)
+        │       │   └── article
+        │       │       ├── header
+        │       │       ├── p
+        │       │       └── time
+        │       │
+        │       ├── section (Experience)
+        │       │   └── article
+        │       │       ├── header
+        │       │       ├── strong
+        │       │       ├── time
+        │       │       └── ul
+        │       │
+        │       └── section (Projects)
+        │           ├── article (FOSSEE eSim Automated Tool Manager)
+        │           ├── article (Flask Portfolio Website)
+        │           ├── article (Watermark Desktop App)
+        │           ├── article (Typing Speed Test App)
+        │           └── article (Breakout Game)
+        │
+        └── footer
+            └── Copyright
+```
+
+---
+
+## Semantic HTML Elements Used
+
+| Tag             | Purpose                                                          |
+| --------------- | ---------------------------------------------------------------- |
+| `<article>`     | Represents the entire resume and individual resume entries       |
+| `<header>`      | Header of the resume and each article                            |
+| `<main>`        | Main content area containing education, experience, and projects |
+| `<aside>`       | Sidebar containing supporting information                        |
+| `<section>`     | Groups related content into logical sections                     |
+| `<footer>`      | Footer containing copyright information                          |
+| `<address>`     | Contact information (GitHub and LinkedIn)                        |
+| `<time>`        | Represents dates with the `datetime` attribute                   |
+| `<strong>`      | Highlights important text such as organization names             |
+| `<ul>` / `<li>` | Lists for skills, coursework, and achievements                   |
+| `<hr>`          | Separates section headings visually                              |
+
+---
+
+## Features
+
+* Semantic HTML5 structure
+* Two-column resume layout
+* Organized content using semantic elements
+* Proper use of `<time>` and `<address>`
+* Accessible and SEO-friendly markup
+* Ready for CSS styling
+* No JavaScript required
 
 ---
 
 ## How to Run
 
-1. Clone or download this repo
-2. Open `resume.html` in any browser
+1. Clone or download this repository.
+2. Open **`resume.html`** in any modern web browser.
 
-No build step. No dependencies. Just HTML.
+No installation, dependencies, or build tools are required.
 
 ---
 
-## ScreenShots
+## Screenshot
+
 ![Resume](RESUMEHTML.png)
+
 ---
+
 ## Author
 
-**Ayush Joshi**  
-B.Tech CSE · Amrapali University · Haldwani, Uttarakhand  
-GitHub: [AyushThinks](https://github.com/AyushThinks)  
-LinkedIn: [ayush-joshi](https://www.linkedin.com/in/ayush-joshi-4a4316367/)
+**Ayush Joshi**
+
+* B.Tech Computer Science & Engineering
+* Amrapali University, Uttarakhand
+* Python Backend Developer
+* SDE Aspirant
+
+**GitHub:** https://github.com/AyushThinks
+
+**LinkedIn:** https://www.linkedin.com/in/ayush-joshi-4a4316367/
