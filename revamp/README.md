@@ -66,22 +66,6 @@ Revamp/
 - Text Transform
 - Spacing & Alignment
 
-## Preview
-
-```md
-![Resume Preview](screenshots/preview.png)
-```
-
-## Learning Outcomes
-
-- Building responsive web layouts
-- Using semantic HTML5 elements
-- Creating two-column layouts with Flexbox
-- Styling modern UI with CSS3
-- Implementing responsive design using media queries
-- Working with pseudo-elements for custom list styles
-- Improving typography and spacing
-- Organizing clean and maintainable code
 
 ## Author
 
